@@ -6,6 +6,6 @@ export function loadData() {
     return JSON.parse(fs.readFileSync(FILE))
 }
 
-export function saveDate(data) {
+export function saveData(data) {
     fs.writeFileSync(FILE, JSON.stringify(data, null, 2))
 }

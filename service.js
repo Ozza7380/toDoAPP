@@ -10,7 +10,7 @@ export function tambaTodo(data, text) {
 export function tampilkanTodo(data) {
     data.forEach((t, i) => {
         const status = t.done ? "[x]" : "[ ]"
-        console.console.log(`${status} ${i + 1}. ${t.text}`);
+        console.log(`${status} ${i + 1}. ${t.text}`);
         
     });
 }
@@ -21,7 +21,7 @@ export function updateTodo(data, index, text) {
 }
 
 export function hapusTodo(data, index) {
-    data.slice(index, 1)
+    data.splice(index, 1)
     return data
 }
 
